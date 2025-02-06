@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from themestarz.net/html/finwin/index-03.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Feb 2025 00:01:30 GMT -->
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="ThemeStarz">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<title>FinWise</title>
+
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <div class="ts-page-wrapper" id="page-top">
+
+        <!--*********************************************************************************************************-->
+        <!--************ HERO ***************************************************************************************-->
+        <!--*********************************************************************************************************-->
+        <header id="ts-hero" class="ts-full-screen ts-separate-bg-element">
+            <!--NAVIGATION ******************************************************************************************-->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top ts-separate-bg-element" data-bg-color="#141a3a">
+                <div class="container">
+                    <a class="navbar-brand" href="#page-top">
+                        <strong>FinWise</strong>
+                        <img src="" alt="" height:25px>
+                    </a>
+                    <!--end navbar-brand-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--end navbar-toggler-->
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link active ts-scroll" href="#page-top">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link ts-scroll" href="#how-it-works">How it Works</a>
+                            <a class="nav-item nav-link ts-scroll" href="#categories">Categories</a>
+                            <a class="nav-item nav-link ts-scroll" href="#about-us">About</a>
+                            <a class="nav-item nav-link ts-scroll mr-2" href="#form-contact">Contact</a>
+                            <a id="getStartedBtn" class="ts-scroll btn btn-primary btn-sm m-1 px-3 ts-width__auto" href="#form-contact">Login</a>
+                        </div>
+                        <!--end navbar-nav-->
+                    </div>
+                    <!--end collapse-->
+                </div>
+                <!--end container-->
+            </nav>
+            <!--end navbar-->
+
+            <!--HERO CONTENT ****************************************************************************************-->
+
+            <div class="container align-self-center align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-7 col-md-7 d-none d-sm-block">
+                        <h1 data-animate="ts-fadeInUp"></h1>
+                        <div data-animate="ts-fadeInUp" data-delay=".1s">
+                            <p class="w-75 text-white mb-5 ts-opacity__50"></p>
+                        </div>
+                        <a id="getStartedBtn" class="btn btn-outline-light btn-lg ts-scroll mr-4" data-animate="ts-fadeInUp" data-delay=".2s">
+                            Get Assistance 
+                            <i class="fa fa-arrow-right small ml-3 ts-opacity__50"></i>
+                        </a><hr>
+                        <div class="descrption" style="width: 400px;">
+                        <a> 
+                            <strong><p</p style="font-size:30px; "> YOUR PERSONAL FINANCIAL ASSISTANT</p></strong>
+                            
+                            <p</p>"Unlock your financial potential with smart, actionable solutions. From saving to investing, we’re here to guide your success."</p>
+                        </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Get Assistance Button -->
+<!-- Get Assistance Button -->
+<!-- Get Assistance Button -->
+<!-- Get Assistance Button -->
+<!-- <button id="getStartedBtn" class="btn btn-outline-light btn-lg ts-scroll mr-4" data-animate="ts-fadeInUp" data-delay=".2s">Get Assistance</button> -->
+
+<!-- Full-Screen Overlay (Initially Hidden) -->
+<div class="form-overlay" id="formOverlay">
+    <div class="form-container">
+        <span id="closeForm">✖</span> <!-- Close Button -->
+        <h2>Fill Your Details</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="11975abd-60af-4e9c-afb3-19244be289da">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="number" name="age" placeholder="Your Age" required>
+            <input type="text" name="profession" placeholder="Your Profession" required>
+            <input type="number" name="salary" placeholder="Your Salary" required>
+            <input type="text" name="category" placeholder="Your Category" required>
+            <input type="text" name="property" placeholder="Your Property" required>
+            <select name="Interest" required>
+                <option value="" disabled selected>Select Interest</option>
+                <option value="stocks" name="Interest">Stocks</option>
+                <option value="real-estate" name="Interest">Real Estate</option>
+                <option value="crypto" name="Interest">Cryptocurrency</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- CSS Styling -->
+<style>
+/* Button Styling */
+#getStartedBtn {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#getStartedBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Full-Screen Overlay */
+.form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Form Container */
+.form-container {
+    background: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    position: relative;
+    max-height: 90vh; /* Prevents overflow */
+    overflow-y: auto; /* Enables scrolling */
+}
+
+/* Close Button */
+#closeForm {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#closeForm:hover {
+    color: darkred;
+}
+
+/* Form Styling */
+form {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Input Fields */
+form input, form select, form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Input Focus Effect */
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #0056b3; /* Darker blue on focus */
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+/* Submit Button */
+form button {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    border: none;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Show form when active */
+.form-overlay.active {
+    display: flex;
+}
+</style>
+
+<!-- JavaScript to Toggle Form & Enable Scroll -->
+<script>
+document.getElementById("getStartedBtn").addEventListener("click", function() {
+    document.getElementById("formOverlay").classList.add("active");
+    setTimeout(() => {
+        document.querySelector(".form-container").scrollIntoView({ behavior: "smooth" });
+    }, 200); // Delayed scroll for smooth effect
+});
+
+document.getElementById("closeForm").addEventListener("click", function() {
+    document.getElementById("formOverlay").classList.remove("active");
+});
+</script>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="ts-background" data-bg-color="#001135" data-bg-parallax="scroll" data-bg-parallax-speed="3">
+                <div class="ts-img-bg ts-opacity__50 ts-parallax-element">
+                    <img class="bg-img-full" src="assets/img/background2.jpg" alt="background image">
+                </div>
+                <!-- end ts-video -->
+            </div>
+            <!-- end ts-background -->
+
+        </header>
+        <!--end #hero-->
+
+        <!--*********************************************************************************************************-->
+        <!--************ CONTENT ************************************************************************************-->
+        <!--*********************************************************************************************************-->
+        <main id="ts-content">
+            
+
+
+
+
+            <!--HOW IT WORKS ****************************************************************************************-->
+            <section id="How It Works" class="ts-separate-bg-element" data-bg-image="assets/img/bg-hand-mobile.jpg" data-bg-image-opacity=".1" data-bg-color="#2125"></section>
+                <div class="container">
+                    <div class="ts-title">
+                        <br>
+                        <br>
+                        <h2>How It Works</h2>
+                    </div>
+                    <!--end ts-title-->
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-xl-4">
+                            <div class="ts-item" data-animate="ts-fadeInUp">
+                                <div class="ts-item-content">
+                                    <div class="ts-item-header">
+                                        <figure class="icon">
+                                            <span class="step" data-animate="ts-zoomIn">1</span>
+                                            <div class="ts-circle__md" data-bg-color="#ebf1fe">
+                                                <img src="assets/img/icon-bubble.png" alt="">
+                                            </div>
+                                        </figure>
+                                        <!--end icon-->
+                                    </div>
+                                    <!--end ts-item-header-->
+                                    <div class="ts-item-body">
+                                        <h4>Click Get assistance and complete your profile</h4>
+                                        
+                                            Your One-Stop Solution for Profile Management, Investment Insights, and Car Loan Assistance
+                                        </p>
+                                    </div>
+                                    <!--end ts-item-body-->
+                                </div>
+                                <!--end ts-item-content-->
+                            </div>
+                            <!--end ts-item-->
+                        </div>
+                        <!--end col-xl-4-->
+                        <div class="col-sm-6 col-md-4 col-xl-4">
+                            <div class="ts-item" data-animate="ts-fadeInUp" data-delay="0.1s">
+                                <div class="ts-item-content">
+                                    <div class="ts-item-header">
+                                        <figure class="icon">
+                                            <span class="step" data-animate="ts-zoomIn">2</span>
+                                            <div class="ts-circle__md" data-bg-color="#ebf1fe">
+                                                <img src="assets/img/property.jpg" alt="">
+                                            </div>
+                                        </figure>
+                                        <!--end icon-->
+                                    </div>
+                                    <!--end ts-item-header-->
+                                    <div class="ts-item-body">
+                                        <h4>Check Your property/stocks</h4>
+                                        Complete Your Profile, Monitor Stocks, and Secure Your Car Loan in One Place
+                                        </p>
+                                    </div>
+                                    <!--end ts-item-body-->
+                                </div>
+                                <!--end ts-item-content-->
+                            </div>
+                            <!--end ts-item-->
+                        </div>
+                        <!--end col-xl-4-->
+                        <div class="col-sm-6 offset-sm-4 col-md-4 offset-md-0 col-xl-4">
+                            <div class="ts-item" data-animate="ts-fadeInUp" data-delay="0.2s">
+                                <div class="ts-item-content">
+                                    <div class="ts-item-header">
+                                        <figure class="icon">
+                                            <span class="step" data-animate="ts-zoomIn">3</span>
+                                            <div class="ts-circle__md" data-bg-color="#ebf1fe">
+                                                <img src="assets/img/car.jpeg" alt="">
+                                            </div>
+                                        </figure>
+                                        <!--end icon-->
+                                    </div>
+                                    <!--end ts-item-header-->
+                                    <div class="ts-item-body">
+                                        <h4>Car Loan</h4>
+                                        
+                                            Your Road to Car Ownership Starts Here with Convenient Loan Solutions."
+                                        </p>
+                                    </div>
+                                    <!--end ts-item-body-->
+                                </div>
+                                <!--end ts-item-content-->
+                            </div>
+                            <!--end ts-item-->
+                        </div>
+                        <!--end col-xl-4-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </section>
+            <!--END HOW IT WORKS ************************************************************************************-->
+
+            <hr>
+
+        
+            <!--OUR TEAM ********************************************************************************************-->
+            <section id="Categories" class="ts-block">
+                <div class="container">
+                    <div class="ts-title">
+                        <h2>Categories</h2>
+                    </div>
+                    <!--end ts-title-->
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="ts-card__image ts-img-into-bg">
+                                    <img class="card-img-top" src="assets/img/Car.jpg" alt="Card image cap" width:20px height:15px>
+                                </div>
+                                <!--end ts-card__image-->
+                                <div class="card-body">
+                                    <h5 class="mb-1">Car Loan</h5>
+                                    <h6 class="ts-opacity__50"></h6>
+                                </div>
+                                <!--end card-body-->
+                                <div class="card-footer bg-white">
+                                    <div class="quotes">
+                                       <strong>"Your journey starts here - financing made simple."</strong>
+                                    </div>
+                                    <!--end social-icons-->
+                                </div>
+                                <!--end card-footer-->
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="ts-card__image ts-img-into-bg">
+                                    <img class="card-img-top" src="assets/img/Property.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="mb-1">Property</h5>
+                                    <h6 class="ts-opacity__50"></h6>
+                                </div>
+                                <div class="card-footer bg-white">
+                                    <div class="quote">
+                                       <strong>"Building wealth, one property at a time."</strong>
+                                    <!--end social-icons-->
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end col-md-3-->
+
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="ts-card__image ts-img-into-bg">
+                                    <img class="card-img-top" src="assets/img/mf.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="mb-1">Mutual Funds</h5>
+                                    <h6 class="ts-opacity__50"></h6>
+                                </div>
+                                <div class="card-footer bg-white">
+                                    <div class="quote">
+                                        <strong>"Your path to financial growth,diversified for success."</strong>
+                                    </div>
+                                 </div>
+                                    
+                                </div>
+                        </div>
+                            <!--end card-->
+                        
+                        <!--end col-md-3-->
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="ts-card__image ts-img-into-bg">
+                                    <img class="card-img-top" src="assets/img/Stocks.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="mb-1">Stock</h5>
+                                    <h6 class="ts-opacity__50"></h6>
+                                </div>
+                                <div class="card-footer bg-white">
+                                    <div class="quote">
+                                        <strong>"Smart investments today pave the way for a prosperous tomorrow"</strong>
+                                    </div>
+                                 </div>
+                                    
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end col-md-3-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </section>
+            <!--END OUR TEAM ****************************************************************************************-->
+
+            <!--ABOUT US ********************************************************************************************-->
+            <section id="About Us" class="ts-separate-bg-element" data-bg-image="assets/img/bg-hand-mobile.jpg" data-bg-image-opacity=".1" data-bg-color="#2125">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="ts-block pr-3">
+                                <div class="ts-title">
+                                    <h2>About Us</h2>
+                                </div>
+                                <!--end ts-title-->
+                                <strong>
+                                    FinWise is your go-to platform for smart financial management.
+                                    We offer expert solutions for car loans, property investments, stocks, and mutual funds,
+                                    helping you make informed financial decisions. Whether you're buying a car, 
+                                    investing in real estate, or growing your wealth, we provide the insights and tools you need.
+                                    Start your journey to financial success with us today!
+                                <strong>
+                                <div class="list-group list-group-flush mb-5">
+                                    <a href="#collapseOne" class="list-group-item list-group-item-action border-top-0 pl-0 font-weight-bold bg-transparent" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseOne">Our Mission</a>
+                                    <div class="collapse" id="collapseOne">
+                                        <p class="pt-3 small">
+                                       At FinWise, our mission is to help you manage your investments with ease.
+                                       We provide expert guidance on mutual funds, stocks, property investments, and car loans, 
+                                       connecting you with the best options to achieve your financial goals. Your financial success is our priority!
+                                        </p>
+                                    </div>
+                                    <a href="#collapseTwo" class="list-group-item list-group-item-action pl-0 font-weight-bold bg-transparent" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseTwo">We Love Our Clients</a>
+                                    <div class="collapse" id="collapseTwo">
+                                        <p class="pt-3 small">
+                                        Our mission is to provide tailored financial solutions that help you achieve your goals.
+                                        We are committed to supporting you every step of the way on your financial journey.
+                                        Thank you for choosing us!
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--end col-md-6-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+
+
+                
+
+            </section>
+            <!--END ABOUT US ****************************************************************************************--> 
+
+
+            <!--Contact Us   ---------------->
+            <section id="contact" class="ts-separate-bg-element" data-bg-image="assets/img/bg-hand-mobile.jpg" data-bg-image-opacity=".1" data-bg-color="#12264f">
+                <div class="container">
+                    <div class="ts-box mb-0 p-5 ts-mt__n-10" data-animate="ts-fadeInUp">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3>Contact Us</h3>
+                                <address>
+                                    <figure>
+                                        7F27+XQV, Indrapuri C sector, Sector C, Indrapuri, Bhopal, Madhya Pradesh 462022
+                                    </figure>
+                                    <br>
+                                    <figure>
+                                        <div class="font-weight-bold">Email:</div>
+                                        <a href="#">finmanage89@gmail.com</a>
+                                    </figure>
+                                    <figure>
+                                        <div class="font-weight-bold">Phone:</div>
+                                        +919685034128,+918878904715
+                                    </figure>
+                                    <div class="font-weight-bold">Skype:</div>
+                                    fin.Wise
+                                </address>
+                                <!--end address-->
+                            </div>
+                            <!--end col-md-4-->
+                            <div class="col-md-8">
+                                <h3 style="margin-left: 18px;">Contact Form</h3>
+                                <form id="form-contact" method="post" class="clearfix ts-form ts-form-email ts-inputs__transparent" data-php-path="assets/php/email.html">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <label for="form-contact-name">Your Name *</label>
+                                                <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Your Name" required>
+                                            </div>
+                                            <!--end form-group -->
+                                        </div>
+                                        <!--end col-md-6 col-sm-6 -->
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <label for="form-contact-email">Your Email *</label>
+                                                <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Your Email" required>
+                                            </div>
+                                            <!--end form-group -->
+                                        </div>
+                                        <!--end col-md-6 col-sm-6 -->
+                                    </div>
+                                    <!--end row -->
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form-contact-message">Your Message *</label>
+                                                <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Your Message" required></textarea>
+                                            </div>
+                                            <!--end form-group -->
+                                        </div>
+                                        <!--end col-md-12 -->
+                                    </div>
+                                    <!--end row -->
+                                    <div class="form-group clearfix">
+                                        <button type="submit" class="btn btn-primary float-right" id="form-contact-submit">Send a Message</button>
+                                    </div>
+                                    <!--end form-group -->
+                                    <div class="form-contact-status"></div>
+                                </form>
+                                <!--end form-contact -->
+                            </div>
+                            
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end ts-box-->
+                    <div class="text-center text-white py-4">
+                        <small></small>
+                    </div>
+                </div>
+                <!--end container-->
+            </section>
+
+        </footer>
+        <!--end #footer-->
+
+    </div>
+    <!--end page-->
+
+	<script src="assets/js/custom.hero.js"></script>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBEDfNcQRmKQEyulDN8nGWjLYPm8s4YB58"></script>
+	<script src="assets/js/isInViewport.jquery.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/scrolla.jquery.min.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+<!-- Mirrored from themestarz.net/html/finwin/index-03.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Feb 2025 00:02:36 GMT -->
+</html>
